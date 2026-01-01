@@ -1,0 +1,243 @@
+/* Global Styles & Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8; /* Regal-এর মতো হালকা ব্যাকগ্রাউন্ড */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a4a4a; /* ডার্ক গ্রে */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 30px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #555; /* একটু হালকা গ্রে */
+    font-weight: 600;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #d4a762; /* Regal-এর গোল্ডেন অ্যাকসেন্ট কালার */
+}
+
+.cart-icon {
+    font-size: 20px;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero-section {
+    /* Replace the URL with your image path or use this online link to test */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1350&q=80'); 
+    
+    height: 80vh; /* Sets height to 80% of the screen height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section::before { /* অপশনাল: ছবির উপর হালকা কালো আভা */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d4a762; /* Regal-এর গোল্ডেন বাটন */
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0914c;
+}
+
+/* Products Section */
+.products-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+.products-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #4a4a4a;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 200px; /* সকল ছবির উচ্চতা একই রাখতে */
+    object-fit: cover; /* ছবিগুলোকে বক্সের মধ্যে সুন্দরভাবে ফিট করতে */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item .price {
+    font-size: 1.3em;
+    color: #d4a762; /* গোল্ডেন প্রাইস */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-item .add-to-cart {
+    background-color: #4a4a4a; /* ডার্ক গ্রে বাটন */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .add-to-cart:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* ডার্ক ফুটার */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* ছোট স্ক্রিনে নিচে নামানোর জন্য */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #d4a762; /* গোল্ডেন অ্যাকসেন্ট */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* মোবাইলে একটি করে পণ্য দেখাবে */
+    }
+}
