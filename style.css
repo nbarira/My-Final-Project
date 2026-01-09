@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f8f8; /* Regal-এর মতো হালকা ব্যাকগ্রাউন্ড */
+    background-color: #f8f8f8; 
     color: #333;
 }
 
@@ -30,7 +30,7 @@ body {
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #4a4a4a; /* ডার্ক গ্রে */
+    color: #4a4a4a;
 }
 
 .navbar .nav-links {
@@ -46,14 +46,14 @@ body {
 
 .navbar .nav-links a {
     text-decoration: none;
-    color: #555; /* একটু হালকা গ্রে */
+    color: #555; 
     font-weight: 600;
     font-size: 17px;
     transition: color 0.3s ease;
 }
 
 .navbar .nav-links a:hover {
-    color: #d4a762; /* Regal-এর গোল্ডেন অ্যাকসেন্ট কালার */
+    color: #d4a762; 
 }
 
 .cart-icon {
@@ -67,7 +67,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                       url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1350&q=80'); 
     
-    height: 80vh; /* Sets height to 80% of the screen height */
+    height: 80vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +78,7 @@ body {
     text-align: center;
 }
 
-.hero-section::before { /* অপশনাল: ছবির উপর হালকা কালো আভা */
+.hero-section::before { 
     content: '';
     position: absolute;
     top: 0;
@@ -104,7 +104,7 @@ body {
 
 .btn {
     display: inline-block;
-    background-color: #d4a762; /* Regal-এর গোল্ডেন বাটন */
+    background-color: #d4a762; 
     color: white;
     padding: 15px 35px;
     text-decoration: none;
@@ -154,8 +154,8 @@ body {
 
 .product-item img {
     max-width: 100%;
-    height: 200px; /* সকল ছবির উচ্চতা একই রাখতে */
-    object-fit: cover; /* ছবিগুলোকে বক্সের মধ্যে সুন্দরভাবে ফিট করতে */
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -168,13 +168,13 @@ body {
 
 .product-item .price {
     font-size: 1.3em;
-    color: #d4a762; /* গোল্ডেন প্রাইস */
+    color: #d4a762; 
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .product-item .add-to-cart {
-    background-color: #4a4a4a; /* ডার্ক গ্রে বাটন */
+    background-color: #4a4a4a; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -190,7 +190,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #333; /* ডার্ক ফুটার */
+    background-color: #333; 
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -200,7 +200,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* ছোট স্ক্রিনে নিচে নামানোর জন্য */
+    flex-wrap: wrap; 
 }
 
 .footer p {
@@ -217,7 +217,7 @@ body {
 }
 
 .footer .social-links a:hover {
-    color: #d4a762; /* গোল্ডেন অ্যাকসেন্ট */
+    color: #d4a762; 
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -238,6 +238,7 @@ body {
     }
 
     .product-grid {
-        grid-template-columns: 1fr; /* মোবাইলে একটি করে পণ্য দেখাবে */
+        grid-template-columns: 1fr; 
     }
+
 }
